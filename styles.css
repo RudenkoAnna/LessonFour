@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+table,
+ul,
+ol {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-style: italic;
+}
+h3 {
+  font-weight: bold;
+}
+th {
+  text-transform: uppercase;
+}
+a {
+  color: #00f;
+  text-decoration: underline;
+}
+a:visited {
+  color: #005;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  list-style-type: square;
+}
