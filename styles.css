@@ -40,3 +40,9 @@ ul {
   border-width: 2px;
   border-color: darkmagenta;
 }
+.wrapper th {
+  background-color: pink;
+}
+.wrapper td {
+  background-color: whitesmoke;
+}
