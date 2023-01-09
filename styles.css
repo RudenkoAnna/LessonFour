@@ -61,3 +61,6 @@ ul {
 .section2 {
   clear: both;
 }
+table {
+  width: 100%;
+}
