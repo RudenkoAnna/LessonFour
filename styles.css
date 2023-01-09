@@ -30,3 +30,13 @@ a:hover {
 ul {
   list-style-type: square;
 }
+.lines {
+  border-bottom: 1px solid darkmagenta;
+  margin-bottom: 10px;
+}
+.picture {
+  border-style: solid;
+  padding: 10px;
+  border-width: 2px;
+  border-color: darkmagenta;
+}
