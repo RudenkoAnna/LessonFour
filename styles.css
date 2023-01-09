@@ -36,13 +36,28 @@ ul {
 }
 .picture {
   border-style: solid;
+  width: 100px;
+  height: 100px;
   padding: 10px;
   border-width: 2px;
   border-color: darkmagenta;
+  float: right;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
 }
 .wrapper th {
   background-color: pink;
 }
 .wrapper td {
   background-color: whitesmoke;
+}
+.section1 {
+  display: block;
+  justify-content: flex-start;
+}
+
+.section2 {
+  clear: both;
 }
