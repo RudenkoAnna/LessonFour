@@ -1,9 +1,4 @@
-h1,
-h2,
-h3,
-table,
-ul,
-ol {
+.wrapper {
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
 }
