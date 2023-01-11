@@ -8,3 +8,13 @@ form {
   padding: 20px;
   width: 80%;
 }
+
+#email,
+#message,
+#job {
+  padding: 0 auto;
+}
+
+#email {
+  margin: 10px;
+}
