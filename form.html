@@ -4,7 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Form for contact</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Hire me</h1>
+    <h2>Contact informtion</h2>
+    <table>
+      <tr>
+        <th>Phone</th>
+        <td>(063) 470 0165</td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td>Ukraine</td>
+      </tr>
+    </table>
+    <form class="contact_form">
+      <fieldset>
+      <legend>Contact form: </legend> <br/>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+      <br/>
+      <label for="description"> Description: </label>
+      <textarea name="comments" rows="5" cols="20"></textarea> <br/>
+      <label for="work_type">Work type:</label>
+      <select name="work" id="job">
+        <option value="full-time"> Full-time </option>
+        <option value="remote"> Remote </option>
+        <option value="one-time"> One-time project </option>
+      </select>
+      <br/>
+      <input type="submit" value="Hire me">
+      
+      </label>
+      </fieldset>
+    </form>
+  </body>
 </html>
