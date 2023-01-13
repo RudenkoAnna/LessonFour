@@ -42,6 +42,7 @@ ul {
   border-width: 2px;
   border-color: darkmagenta;
   float: right;
+  display: flex;
 }
 .wrapper {
   display: flex;
@@ -55,9 +56,14 @@ ul {
 }
 .section1 {
   display: block;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
-
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+}
 .section2 {
   clear: both;
 }
