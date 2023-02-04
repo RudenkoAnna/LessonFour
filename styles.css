@@ -1,4 +1,18 @@
 .wrapper {
   display: grid;
   grid-template-columns: 200px 450px;
+  gap: 40px;
+  margin: 20px;
+}
+.contacts {
+  background-color: #86a3b4;
+}
+
+.information {
+  font-family: Sans-serif;
+
+  color: #000000;
+}
+.minor {
+  margin: 10px;
 }
