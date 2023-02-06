@@ -1,18 +1,33 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 200px 450px;
+  grid-template-columns: 385px 815px;
   gap: 40px;
   margin: 20px;
+  font-family: Inter;
+  line-height: 38px;
+  size: 32px;
 }
 .contacts {
   background-color: #86a3b4;
 }
 
 .information {
-  font-family: Sans-serif;
+  font-family: Inter;
 
   color: #000000;
 }
 .minor {
-  margin: 10px;
+  margin: 40px;
+  text-align: left;
+  width: 334px;
+}
+img {
+  width: 382px;
+  height: 297px;
+}
+hr {
+  border: solid 5px #1e1e1e;
+}
+.name {
+  margin: 40px;
 }
