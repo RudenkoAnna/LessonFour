@@ -1,0 +1,13 @@
+input,
+select,
+textarea,
+submit,
+email,
+label {
+  appearance: none;
+}
+.contact_form {
+  box-sizing: border-box;
+  max-width: 1024 px;
+  text-align: center;
+}
