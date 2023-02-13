@@ -13,12 +13,31 @@ email,
 label {
   appearance: none;
 }
+
 .contact_form {
   box-sizing: border-box;
+  border-radius: 5px;
   max-width: 1024 px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: medium;
+}
+
+input,
+select,
+textarea,
+.message {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  background-color: rgb(225, 225, 230);
+  max-width: 460px;
+  width: 100%;
+  outline: none;
+}
+input[type="text"]:focus {
+  border: 2px solid blue;
 }
 input[type="submit"] {
   background-color: #0048d8;
@@ -45,4 +64,35 @@ input[type="submit"]:focus {
   background-color: white;
   border: 1px solid #0048d8;
   transition: all 0.3s ease 0s;
+}
+.req {
+  color: red;
+}
+
+input[type="email"]:focus {
+  border-color: rgb(70, 70, 224);
+}
+
+input[type="email"]:required:invalid {
+  border-color: red;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  border: 2px solid rgb(225, 225, 230);
+  font-size: 16px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+}
+input[type="email"]:checked {
+  border-color: green;
+}
+
+select:hover {
+  border-color: #0048d8;
+}
+footer {
+  text-align: center;
+  padding: 10px;
 }

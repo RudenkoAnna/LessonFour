@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Form for contact</title>
     <link href="./styles.css" rel="stylesheet">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php"></form>
   </head>
   <body>
     <div class="mainInfo"></div>
@@ -26,11 +27,11 @@
     <form class="contact_form">
       <fieldset>
       <legend class="main_block">Contact form: </legend> <br/>
-      <label for="email">E-mail*:</label>
+      <label for="email">E-mail<span class="req">*</span>:</label>
       <input type="email" id="email" name="email" required />
       <br/>
       <label  for="message"> Description: </label>
-      <textarea name="comments" rows="5" cols="20" id="message"></textarea> <br/>
+      <textarea type="text" name="comments" rows="5" cols="20" id="message"></textarea> <br/>
       <label for="job">Work type:</label>
       <select name="work" id="job">
         <option value="full-time"> Full-time </option>
@@ -42,7 +43,8 @@
       </label>
       </fieldset>
     </form>
-
-    <a href="index.html"> My CV page </a>
+<footer>
+    <a class="CVpage" href="index.html"> My CV page </a>
+    </footer>
   </body>
 </html>
