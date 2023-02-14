@@ -15,6 +15,11 @@ label {
 }
 
 .contact_form {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   box-sizing: border-box;
   border-radius: 5px;
   max-width: 1024 px;
@@ -32,7 +37,7 @@ textarea,
   border-radius: 5px;
   margin: 20px;
   background-color: rgb(225, 225, 230);
-  max-width: 460px;
+  max-width: 400px;
   width: 100%;
   outline: none;
 }
@@ -93,6 +98,11 @@ select:hover {
   border-color: #0048d8;
 }
 footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
   text-align: center;
   padding: 10px;
 }
