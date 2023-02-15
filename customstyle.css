@@ -1,0 +1,10 @@
+.my-theme {
+  --bg-color: #e5989b;
+  --heads-color: #000000;
+  --text-color: #47434c;
+  --footer-bg-color: #ffb4a2;
+  --border-main-color: #331f23;
+  --footer-side-color: #47434c;
+  --name-color: #ffe4d6;
+  --surname-color: #59363d;
+}
