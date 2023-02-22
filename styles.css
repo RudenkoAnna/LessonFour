@@ -23,13 +23,15 @@
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 385px 815px;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr;
   gap: var(--distance-large);
   margin: var(--distance-medium);
   font-family: Inter;
   size: 32px;
 }
 .contacts {
+  grid-area: contacts;
   display: block;
   position: fixed;
   top: var(--distance-none);
@@ -41,6 +43,7 @@
 }
 
 .information {
+  grid-area: information;
   display: block;
   position: absolute;
   top: var(--distance-none);
@@ -50,6 +53,7 @@
   color: var(--text-color);
 }
 .minor {
+  grid-area: minor;
   margin: 40px;
   text-align: left;
   width: 334px;
@@ -60,16 +64,28 @@
 .education {
   margin: var(--distance-large);
 }
+.summary {
+  grid-area: summary;
+}
+.education {
+  grid-area: education;
+}
+.experience {
+  grid-area: experience;
+}
 .skills {
+  grid-area: skills;
   width: 659px;
   height: 184px;
 }
 img {
+  grid-area: photo;
+  max-width: 100%;
   width: 382px;
   height: 297px;
 }
 hr {
-  width: 85%;
+  max-width: 85%;
   margin-left: 0%;
   border: solid 3px var(--border-main-color);
 }
@@ -83,6 +99,7 @@ h1 {
   margin: 40px;
 }
 footer {
+  grid-area: footer;
   background-color: var(--footer-bg-color);
   border: 1px solid var(--footer-side-color);
   opacity: 0.85;
@@ -94,4 +111,19 @@ footer {
   bottom: 0;
   right: 0;
   padding: var(--distance-small);
+}
+@media screen and (max-width: 550px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "contacts"
+      "photo"
+      "minor"
+      "summary"
+      "skills"
+      "experience"
+      "education"
+      "footer";
+  }
 }
