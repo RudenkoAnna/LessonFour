@@ -24,8 +24,8 @@
 .wrapper {
   display: grid;
   height: 100vh;
-  grid-template-columns: 0.4fr 2fr;
-  grid-template-rows: auto;
+  grid-template-columns: 0.4fr 1fr;
+
   grid-template-areas: "sidebar" "main";
   gap: var(--distance-large);
   margin: var(--distance-medium);
@@ -39,9 +39,9 @@
 .sidebar {
   grid-area: sidebar;
   position: fixed;
+  max-width: 30%;
   top: var(--distance-none);
   height: 100%;
-  max-width: 30%;
   margin-top: var(--distance-none);
   padding: var(--distance-medium);
   background-color: var(--bg-color);
@@ -118,6 +118,7 @@ footer {
 }
 @media screen and (max-width: 550px) {
   .wrapper {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
