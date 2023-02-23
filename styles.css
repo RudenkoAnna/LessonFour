@@ -124,10 +124,4 @@ footer {
       "sidebar"
       "main";
   }
-  .main {
-    max-width: 100%;
-  }
-  .sidebar {
-    max-width: 100%;
-  }
 }
