@@ -88,6 +88,7 @@ img {
   max-width: 382px;
   max-height: 297px;
 }
+
 hr {
   max-width: 85%;
   margin-left: 0%;
@@ -124,5 +125,17 @@ footer {
     grid-template-areas:
       "sidebar"
       "main";
+  }
+  .sidebar {
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .sidebar {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .photo:hover {
+    transform: scale(1.8);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
