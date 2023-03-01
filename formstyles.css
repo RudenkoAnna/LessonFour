@@ -2,7 +2,6 @@ h1,
 h2,
 table {
   text-align: center;
-  max-width: 1024 px;
 }
 
 input,
@@ -12,13 +11,19 @@ submit,
 email,
 label {
   appearance: none;
+  border: none;
+  display: block;
+}
+fieldset {
+  display: block;
+  text-align: left;
+  border-radius: 5px;
+  width: 1024px;
 }
 
 .contact_form {
   box-sizing: border-box;
   border-radius: 5px;
-  max-width: 1024 px;
-  text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: medium;
 }
@@ -27,14 +32,12 @@ input,
 select,
 textarea,
 .message {
-  padding: 5px;
   border: none;
-  border-radius: 5px;
-  margin: 20px;
-  background-color: rgb(225, 225, 230);
-  max-width: 460px;
-  width: 100%;
+  border-radius: 3px;
+  background-color: #f7f3f3;
+  width: 95%;
   outline: none;
+  text-align: left;
 }
 input[type="text"]:focus {
   border: 2px solid blue;
@@ -43,12 +46,12 @@ input[type="submit"] {
   background-color: #0048d8;
   border-radius: 10px;
   border: none;
-  box-shadow: 0px 5px 10px #828282;
+  box-shadow: 0px 5px 10px #b4afaf;
   cursor: pointer;
   width: 95px;
   height: 34px;
   padding: 10px;
-  margin: 10px 0;
+
   font-family: "Roboto", sans-serif;
   color: antiquewhite;
   font-size: large;
@@ -56,6 +59,13 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   background-color: #002266;
+}
+#message:hover {
+  border: 1px solid #0048d8;
+  transition: all 0.3s ease 0s;
+}
+#message:focus {
+  border-color: rgb(70, 70, 224);
 }
 input[type="submit"]:disabled {
   background-color: #8cacee;
@@ -65,34 +75,54 @@ input[type="submit"]:focus {
   border: 1px solid #0048d8;
   transition: all 0.3s ease 0s;
 }
-.req {
-  color: red;
-}
 
 input[type="email"]:focus {
   border-color: rgb(70, 70, 224);
 }
 
-input[type="email"]:required:invalid {
-  border-color: red;
-}
 input[type="text"],
 input[type="email"],
 select,
 textarea {
-  border: 2px solid rgb(225, 225, 230);
+  border: 2px solid #f7f3f3;
   font-size: 16px;
   padding: 0.5rem 0.75rem;
   border-radius: 10px;
+  max-width: 1024px;
+}
+.req {
+  color: red;
+}
+.error {
+  display: none;
+  color: red;
 }
 input[type="email"]:required:valid {
   border-color: green;
+}
+input[type="email"]:required:hover {
+  border-color: #0048d8;
+}
+input[type="email"]:invalid {
+  display: block;
+  border-color: red;
 }
 
 select:hover {
   border-color: #0048d8;
 }
 footer {
-  text-align: center;
+  background-color: #0048d8;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 5px 10px #b4afaf;
+  cursor: pointer;
+  width: 6rem;
+  height: 2rem;
   padding: 10px;
+  margin: 10px 0;
+  font-family: "Roboto", sans-serif;
+  text-decoration: antiquewhite;
+  font-size: large;
+  text-align: center;
 }

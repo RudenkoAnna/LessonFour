@@ -17,9 +17,10 @@
     <form class="contact_form" action="https://formsubmit.co/0a2d2468462cc9ef4103b6e40e189d8c" method="POST">
       <fieldset>
       <legend class="main_block">Contact form: </legend> <br/>
-      <label for="email">E-mail<span class="req">*</span>:</label>
+      <label for="email" required >E-mail<span class="req">*</span>:</label>
       <input type="email" id="email" name="email" required />
       <br/>
+            <p class="error">Please enter the valid e-mail. </p>
       <label  for="message"> Description: </label>
       <textarea type="text" name="comments" rows="5" cols="20" id="message"></textarea> <br/>
       <label for="job">Work type:</label>
