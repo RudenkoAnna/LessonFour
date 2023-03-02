@@ -19,6 +19,7 @@ fieldset {
   text-align: left;
   border-radius: 5px;
   width: 1024px;
+  margin: 0 auto;
 }
 
 .contact_form {
@@ -110,6 +111,11 @@ input[type="email"]:invalid {
 
 select:hover {
   border-color: #0048d8;
+}
+
+select {
+  min-width: 1rem;
+  background: url("images/check.svg") no-repeat center right 0.1rem;
 }
 footer {
   background-color: #0048d8;
