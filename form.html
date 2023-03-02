@@ -17,7 +17,11 @@
     <form class="contact_form" action="https://formsubmit.co/0a2d2468462cc9ef4103b6e40e189d8c" method="POST">
       <fieldset>
       <legend class="main_block">Contact form: </legend> <br/>
-      <label for="email" required >E-mail<span class="req">*</span>:</label>
+      <label for="email" required placeholder="Enter your e-mail here"
+  
+       title="Pease eneter valid e-mail address."> 
+       E-mail
+       <span class="req">*</span>:</label>
       <input type="email" id="email" name="email" required />
       <br/>
             <p class="error">Please enter the valid e-mail. </p>
@@ -29,6 +33,7 @@
         <option value="remote"> Remote </option>
         <option value="one-time"> One-time project </option>
       </select>
+
       <br/>
       <input type="submit" value="Hire me">
       </label>
