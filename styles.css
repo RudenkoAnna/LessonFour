@@ -205,6 +205,7 @@ footer {
 }
 .experience p {
   opacity: 0.7;
+  transition: opacity 0.6s ease-in-out;
 }
 .experience p:hover {
   opacity: 1;
