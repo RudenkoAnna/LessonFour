@@ -62,7 +62,13 @@
   padding: var(--distance-medium);
   background-color: var(--bg-color);
 }
-
+.minor,
+.main {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
 .main {
   grid-area: main;
   position: absolute;
@@ -71,6 +77,8 @@
   right: 20px;
   padding: 10px;
   color: var(--text-color);
+  animation-name: slideInUp;
+  animation-delay: 1s;
 }
 
 .minor {
@@ -78,6 +86,18 @@
   margin: 40px;
   text-align: left;
   max-width: 334px;
+  animation-name: slideInUp;
+  animation-delay: 0.5s;
+}
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .skills,
