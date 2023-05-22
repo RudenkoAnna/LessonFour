@@ -13,7 +13,7 @@ email,
 label {
   appearance: none;
 }
-
+..
 .contact_form {
   display: block;
   position: fixed;
