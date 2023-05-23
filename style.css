@@ -18,4 +18,15 @@
   --footer-side-color: $side-color;
   --name-color: $white-color;
   --surname-color: $additional-color;
+}
+
+.wrapper {
+  font-family: Inter;
+  font-size: 32px;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.4fr 1fr;
+  grid-template-areas: "sidebar" "main";
+  gap: 50px;
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,2 +1,17 @@
 @import "./customTheme";
 @import "./main-theme";
+
+$gap-size: 50px;
+$margin-size: 10px;
+.wrapper {
+  font: {
+    family: Inter;
+    size: 32px;
+  }
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.4fr 1fr;
+  grid-template-areas: "sidebar" "main";
+  gap: $gap-size;
+  margin: $margin-size;
+}
