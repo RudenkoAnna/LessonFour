@@ -6,15 +6,27 @@ $distance-medium: 10px;
 $distance-standard: 20px;
 $distance-large: 50px;
 $distance-none: 0;
-@mixin blockSize($margin, $gap, $padding) {
-  @if $margin != null {
-    margin: $margin;
+
+@mixin animateBlock($animationSpeed) {
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  @if $gap != null {
-    gap: $gap;
-  }
-  @if $padding != null {
-    padding: $padding;
+
+  .minor,
+  .main {
+    opacity: 0;
+    transform: translateY(50px);
+    animation-duration: $animationSpeed;
+    animation-fill-mode: forwards;
+    animation-name: slideInUp;
+    @include animateBlock(1s);
   }
 }
 #name {
@@ -76,16 +88,6 @@ $distance-none: 0;
   max-width: 334px;
   animation-name: slideInUp;
   animation-delay: 0.5s;
-}
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .skills,
