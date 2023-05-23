@@ -1,8 +1,29 @@
-@import "./customTheme";
-@import "./main-theme";
+@import "customTheme";
+@import "main-theme";
 
-$gap-size: 50px;
-$margin-size: 10px;
+$distance-small: 5px;
+$distance-medium: 10px;
+$distance-standard: 20px;
+$distance-large: 50px;
+$distance-none: 0;
+@mixin blockSize($margin, $gap, $padding) {
+  @if $margin != null {
+    margin: $margin;
+  }
+  @if $gap != null {
+    gap: $gap;
+  }
+  @if $padding != null {
+    padding: $padding;
+  }
+}
+#name {
+  color: var(--name-color);
+}
+
+#surname {
+  color: var(--surname-color);
+}
 .wrapper {
   font: {
     family: Inter;
@@ -12,6 +33,167 @@ $margin-size: 10px;
   height: 100vh;
   grid-template-columns: 0.4fr 1fr;
   grid-template-areas: "sidebar" "main";
-  gap: $gap-size;
-  margin: $margin-size;
+  @include blockSize($distance-medium, $distance-large, null);
+}
+.name {
+  grid-area: name;
+  @include blockSize($distance-large, null, null);
+}
+/////
+.sidebar {
+  grid-area: sidebar;
+  position: fixed;
+  max-width: 30%;
+  top: $distance-none;
+  height: 100%;
+  margin-top: $distance-none;
+  @include blockSize(null, null, $distance-medium);
+  background-color: var(--bg-color);
+}
+.minor,
+.main {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.main {
+  grid-area: main;
+  position: absolute;
+  max-width: 60%;
+  top: $distance-none;
+  right: 20px;
+  padding: 10px;
+  color: var(--text-color);
+  animation-name: slideInUp;
+  animation-delay: 1s;
+}
+
+.minor {
+  grid-area: minor;
+  margin: 40px;
+  text-align: left;
+  max-width: 334px;
+  animation-name: slideInUp;
+  animation-delay: 0.5s;
+}
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills,
+.summary,
+.experience,
+.education {
+  @include blockSize($distance-large);
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.education {
+  grid-area: education;
+}
+
+.experience {
+  grid-area: experience;
+  max-width: 100%;
+}
+
+.skills {
+  grid-area: skills;
+  max-width: 659px;
+}
+
+img {
+  grid-area: photo;
+  max-width: 382px;
+  max-height: 297px;
+}
+
+hr {
+  max-width: 85%;
+  margin-left: 0%;
+  border: solid 3px var(--border-main-color);
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: var(--footer-bg-color);
+  border: 1px solid var(--footer-side-color);
+  opacity: 0.85;
+  border-radius: 5px;
+  @include blockSize($distance-medium, null, $distance-medium);
+
+  text-decoration: none;
+  position: fixed;
+  bottom: $distance-none;
+  right: $distance-none;
+  color: $white-color;
+}
+@media screen and (max-width: 550px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "sidebar" "main";
+    @include blockSize(null, $distance-medium, null);
+  }
+
+  .sidebar {
+    position: static;
+    max-width: 100%;
+    height: auto;
+    margin-top: $distance-medium;
+    margin-bottom: $distance-medium;
+    @include blockSize(null, null, $distance-medium);
+  }
+
+  .main {
+    position: static;
+    max-width: 100%;
+    margin-top: $distance-medium;
+    margin-bottom: $distance-medium;
+    @include blockSize(null, null, $distance-medium);
+  }
+
+  .minor {
+    @include blockSize($distance-medium, null, null);
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .sidebar {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .photo {
+    transition: transform 0.3s ease-out;
+  }
+  .photo:hover {
+    transform: scale(1.5) translateX(20%);
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 8px 20px;
+  }
+}
+.experience p {
+  opacity: 0.7;
+  transition: opacity 0.6s ease-in-out;
+}
+.experience p:hover {
+  opacity: 1;
 }
