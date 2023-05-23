@@ -43,8 +43,6 @@
   grid-template-areas: "sidebar" "main";
   gap: var(--distance-large);
   margin: var(--distance-medium);
-  font-family: Inter;
-  font-size: 32px;
 }
 
 .name {
