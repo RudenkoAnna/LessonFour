@@ -1,0 +1,19 @@
+$background-color: #86a3b4;
+$dark-color: #000000;
+$main-text-color: #263036;
+$minor-color: #86a3b4;
+$border-color: #1e1e1e;
+$side-color: rgb(110, 110, 172);
+$white-color: white;
+$additional-color: rgb(11, 11, 112);
+
+.main-theme {
+  --bg-color: $background-color;
+  --heads-color: $dark-color;
+  --text-color: $main-text-color;
+  --footer-bg-color: $minor-color;
+  --border-main-color: $border-color;
+  --footer-side-color: $side-color;
+  --name-color: $white-color;
+  --surname-color: $additional-color;
+}

@@ -1,0 +1,21 @@
+.my-theme {
+  --bg-color: $background-color;
+  --heads-color: $dark-color;
+  --text-color: $main-text-color;
+  --footer-bg-color: $minor-color;
+  --border-main-color: $border-color;
+  --footer-side-color: $side-color;
+  --name-color: $white-color;
+  --surname-color: $additional-color;
+}
+
+.main-theme {
+  --bg-color: $background-color;
+  --heads-color: $dark-color;
+  --text-color: $main-text-color;
+  --footer-bg-color: $minor-color;
+  --border-main-color: $border-color;
+  --footer-side-color: $side-color;
+  --name-color: $white-color;
+  --surname-color: $additional-color;
+}/*# sourceMappingURL=style.css.map */
