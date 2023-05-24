@@ -6,26 +6,12 @@ $distance-medium: 10px;
 $distance-standard: 20px;
 $distance-large: 50px;
 $distance-none: 0;
+$border-color: black;
 
-.main-theme {
-  --bg-color: $background-color;
-  --heads-color: $dark-color;
-  --text-color: $main-text-color;
-  --footer-bg-color: $minor-color;
-  --border-main-color: $border-color;
-  --footer-side-color: $side-color;
-  --name-color: $white-color;
-  --surname-color: $additional-color;
-}
-.my-theme {
-  --bg-color: $background-color;
-  --heads-color: $dark-color;
-  --text-color: $main-text-color;
-  --footer-bg-color: $minor-color;
-  --border-main-color: $border-color;
-  --footer-side-color: $side-color;
-  --name-color: $white-color;
-  --surname-color: $additional-color;
+.l {
+  border-radius: 3px;
+  border: 1px solid $border-color;
+  padding: $distance-small;
 }
 @mixin animateBlock($animationSpeed) {
   @keyframes slideInUp {
@@ -119,7 +105,7 @@ $distance-none: 0;
 .summary,
 .experience,
 .education {
-  @include blockSize($distance-large);
+  @include blockSize($distance-large, null, null);
 }
 
 .summary {

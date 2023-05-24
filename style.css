@@ -1,23 +1,29 @@
 .my-theme {
-  --bg-color: #e5989b;
-  --heads-color: #000000;
-  --text-color: #47434c;
-  --footer-bg-color: #ffb4a2;
-  --border-main-color: #331f23;
-  --footer-side-color: #47434c;
-  --name-color: #ffe4d6;
-  --surname-color: #59363d;
+  --bg-color: $background-color;
+  --heads-color: $dark-color;
+  --text-color: $main-text-color;
+  --footer-bg-color: $minor-color;
+  --border-main-color: $border-color;
+  --footer-side-color: $side-color;
+  --name-color: $white-color;
+  --surname-color: $additional-color;
 }
 
 .main-theme {
-  --bg-color: #86a3b4;
-  --heads-color: #000000;
-  --text-color: #263036;
-  --footer-bg-color: #86a3b4;
-  --border-main-color: #1e1e1e;
-  --footer-side-color: rgb(110, 110, 172);
-  --name-color: white;
-  --surname-color: rgb(11, 11, 112);
+  --bg-color: $background-color;
+  --heads-color: $dark-color;
+  --text-color: $main-text-color;
+  --footer-bg-color: $minor-color;
+  --border-main-color: $border-color;
+  --footer-side-color: $side-color;
+  --name-color: $white-color;
+  --surname-color: $additional-color;
+}
+
+.l {
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 5px;
 }
 
 #name {
@@ -35,8 +41,8 @@
   height: 100vh;
   grid-template-columns: 0.4fr 1fr;
   grid-template-areas: "sidebar" "main";
-  gap: 50px;
   margin: 10px;
+  gap: 50px;
 }
 
 .name {
@@ -51,16 +57,8 @@
   top: 0;
   height: 100%;
   margin-top: 0;
-  padding: var(--distance-medium);
+  padding: 10px;
   background-color: var(--bg-color);
-}
-
-.minor,
-.main {
-  opacity: 0;
-  transform: translateY(50px);
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
 }
 
 .main {
@@ -84,16 +82,6 @@
   animation-delay: 0.5s;
 }
 
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .skills,
 .summary,
 .experience,
@@ -145,13 +133,12 @@ footer {
   border: 1px solid var(--footer-side-color);
   opacity: 0.85;
   border-radius: 5px;
+  margin: 10px;
   padding: 10px;
   text-decoration: none;
-  margin: 10px;
   position: fixed;
   bottom: 0;
   right: 0;
-  padding: var(--distance-small);
   color: white;
 }
 
@@ -167,19 +154,19 @@ footer {
     position: static;
     max-width: 100%;
     height: auto;
-    margin-top: var(--distance-medium);
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
   }
   .main {
     position: static;
     max-width: 100%;
-    margin-top: var(--distance-medium);
-    margin-bottom: var(--distance-medium);
-    padding: var(--distance-medium);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
   }
   .minor {
-    margin: var(--distance-medium);
+    margin: 10px;
     max-width: 100%;
   }
 }
@@ -202,4 +189,4 @@ footer {
 
 .experience p:hover {
   opacity: 1;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
