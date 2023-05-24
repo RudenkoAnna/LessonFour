@@ -1,5 +1,5 @@
-@import "./customTheme";
-@import "./main-theme";
+@import "customTheme";
+@import "mainTheme";
 
 $distance-small: 5px;
 $distance-medium: 10px;
@@ -7,6 +7,26 @@ $distance-standard: 20px;
 $distance-large: 50px;
 $distance-none: 0;
 
+.main-theme {
+  --bg-color: $background-color;
+  --heads-color: $dark-color;
+  --text-color: $main-text-color;
+  --footer-bg-color: $minor-color;
+  --border-main-color: $border-color;
+  --footer-side-color: $side-color;
+  --name-color: $white-color;
+  --surname-color: $additional-color;
+}
+.my-theme {
+  --bg-color: $background-color;
+  --heads-color: $dark-color;
+  --text-color: $main-text-color;
+  --footer-bg-color: $minor-color;
+  --border-main-color: $border-color;
+  --footer-side-color: $side-color;
+  --name-color: $white-color;
+  --surname-color: $additional-color;
+}
 @mixin animateBlock($animationSpeed) {
   @keyframes slideInUp {
     from {
