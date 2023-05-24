@@ -24,3 +24,9 @@ function scrollToElement(elementId) {
   const element = document.getElementById(elementId);
   element.scrollIntoView({ behavior: "smooth" });
 }
+
+//////
+
+function toggleAnimation(element) {
+  element.classList.toggle("animate");
+}

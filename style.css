@@ -177,7 +177,7 @@ footer {
   .photo {
     transition: transform 0.3s ease-out;
   }
-  .photo:hover {
+  .photo.animate {
     transform: scale(1.5) translateX(20%);
     box-shadow: rgba(0, 0, 0, 0.7) 0px 8px 20px;
   }
@@ -189,4 +189,4 @@ footer {
 
 .experience p:hover {
   opacity: 1;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
