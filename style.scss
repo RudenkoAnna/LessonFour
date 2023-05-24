@@ -29,6 +29,17 @@ $distance-none: 0;
     @include animateBlock(1s);
   }
 }
+@mixin blockSize($margin, $gap, $padding) {
+  @if $margin != null {
+    margin: $margin;
+  }
+  @if $gap != null {
+    gap: $gap;
+  }
+  @if $padding != null {
+    padding: $padding;
+  }
+}
 #name {
   color: var(--name-color);
 }
@@ -62,13 +73,7 @@ $distance-none: 0;
   @include blockSize(null, null, $distance-medium);
   background-color: var(--bg-color);
 }
-.minor,
-.main {
-  opacity: 0;
-  transform: translateY(50px);
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
+
 .main {
   grid-area: main;
   position: absolute;
