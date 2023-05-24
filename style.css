@@ -20,7 +20,7 @@
   --surname-color: $additional-color;
 }
 
-.l {
+.navigationLetter {
   border-radius: 3px;
   border: 1px solid black;
   padding: 5px;
