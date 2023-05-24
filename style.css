@@ -1,23 +1,23 @@
 .my-theme {
-  --bg-color: $background-color;
-  --heads-color: $dark-color;
-  --text-color: $main-text-color;
-  --footer-bg-color: $minor-color;
-  --border-main-color: $border-color;
-  --footer-side-color: $side-color;
-  --name-color: $white-color;
-  --surname-color: $additional-color;
+  --bg-color: #e5989b;
+  --heads-color: #000000;
+  --text-color: #47434c;
+  --footer-bg-color: #ffb4a2;
+  --border-main-color: #331f23;
+  --footer-side-color: #47434c;
+  --name-color: #ffe4d6;
+  --surname-color: #59363d;
 }
 
 .main-theme {
-  --bg-color: $background-color;
-  --heads-color: $dark-color;
-  --text-color: $main-text-color;
-  --footer-bg-color: $minor-color;
-  --border-main-color: $border-color;
-  --footer-side-color: $side-color;
-  --name-color: $white-color;
-  --surname-color: $additional-color;
+  --bg-color: #86a3b4;
+  --heads-color: #000000;
+  --text-color: #263036;
+  --footer-bg-color: #86a3b4;
+  --border-main-color: #1e1e1e;
+  --footer-side-color: rgb(110, 110, 172);
+  --name-color: white;
+  --surname-color: rgb(11, 11, 112);
 }
 
 #name {
