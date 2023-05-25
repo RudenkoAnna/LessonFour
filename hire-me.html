@@ -35,30 +35,13 @@
         <h2>Contact form:</h2>
       </div>
       <div class="mb-3">
-        <div class="form-group">
-          <label for="Email" class="form-label required">Email address</label>
-          <input
-            type="email"
-            class="form-control is-invalid"
-            id="Email"
-            name="email"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-          />
-          <div class="invalid-feedback">
-            Please enter a valid email address.
-          </div>
-          <div class="valid-feedback">Valid email address.</div>
-        </div>
+        <div class="form-outline">
+  <input type="email" id="typeEmail" class="form-control" />
+  <label class="form-label" for="typeEmail">Enter your email </label>
+</div>
 
         <style>
-          .is-invalid:invalid {
-            border-color: #dc3545;
-          }
-
-          .is-valid:valid {
-            border-color: #28a745;
-          }
+         
           .my-form{
             border: 1px, solid, grey;
             border-radius: 2%;
